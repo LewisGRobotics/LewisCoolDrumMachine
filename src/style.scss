@@ -1,0 +1,106 @@
+body{
+  background-color: #517f83;
+}
+
+.page{
+  transform: scale(1);
+  font-family: 'Bungee', cursive;
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  font-size:1vw;
+}
+.container{
+  font-size:0.8vw;
+  border: 0.25vw solid #253532;
+  border-radius: 0.25vw;
+  padding: 0.5vw;
+  width: fit-content;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.header{
+  margin: 0.5vw;
+  width: fit-content;
+}
+#playButton{
+  font-size:0.65vw;
+  font-family: 'Bungee';
+  background-color: #9e8d77;
+  border-radius: 0.25vw;
+  margin: 0.5vw;
+  width: 5vw;
+}
+#resetButton{
+  font-size:0.65vw;
+  font-family: 'Bungee';
+  background-color: #9e8d77;  
+  border-radius: 0.25vw;
+  margin: 0.5vw;
+  width: 5vw;
+}
+#randomButton{
+  font-size:0.65vw;
+  font-family: 'Bungee';
+  background-color: #9e8d77;  
+  border-radius: 0.25vw;
+  margin: 0.5vw;
+  width: 5vw;
+}
+.slider{
+  -webkit-appearance: none;
+  background: #9e8d77;
+  border-radius: 0.25vw;
+  height: 0.5vw;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.25vw; 
+  border-radius: 0.25vw;
+  height: 1.25vw;
+  background: #253532;
+}
+.inputBox{
+  font-size:0.65vw;
+  -webkit-appearance: none;
+  background: #9e8d77;
+  border-radius: 0.25vw;
+  font-family: 'Bungee', cursive;
+  width: 2vw;
+}
+.sequencerMatrix{
+  width: fit-content;
+}
+.sequencerLine{
+  display: flex;
+  flex-direction: row;
+  margin: 0.5vw;
+  height: 2.5vw;
+  font-family: 'Bungee', cursive;
+}
+.soundName{
+  background-color: #9e8d77;
+  text-align: center;
+  border-radius: 0.25vw;
+  margin: 0.25vw 2.5vw 0.25vw 0.25vw;
+  height: 2vw;
+  width: 5vw;
+}
+.pad{
+  background-color: #9e8d77;
+  text-align: center;
+  border-radius: 0.25vw;
+  margin: 0vw 0vw 0vw 1.25vw;
+  height: 2.5vw;
+  width: 2.5vw;  
+  &.clicked{
+    background-color: #583d34;
+    transform: scale(0.75)
+  }  
+  &.onBeat{
+    background-color: #253532; 
+  }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Lewis&#39; Cool Drum Machine Green</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+  <head>
+    <title>Lewis' Cool Drum Machine</title>
+  </head>
+    
+  <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Covered+By+Your+Grace" rel="stylesheet">
+  
+  <body>
+  <div class="page">
+    <h1>Lewis' Cool Drum Machine</h1>
+    <div class="container">  
+      <div class="header">
+        <button id="playButton">Play/Pause</button>
+        <button id="resetButton">Reset</button>
+        <button id="randomButton">Random</button>
+        <input type="range" min="40" max="200" value="100" class="slider" id="bpmSlider" 
+  onchange="oninput(this.value);">
+        <input type"number"  min="40" max="200" value="100" class="inputBox" id="bpmNumber" onchange="oninput(this.value);">
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; Luis García Montañés | 2021 </p>
+  </footer>
+</html>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.7/howler.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
